@@ -1,34 +1,13 @@
-    1  [200~
-    2  mkdir git-branch
-    3  cd git-branch
-    4  git init
-    5  git checkout -b gitignore
-    6  curl -sSL https://raw.githubusercontent.com/aliaskov/bashscripts/master/.gitignore -o .gitignore
-    7  ls -a
-    8  git add .gitignore
-    9  git remote add origin https://github.com/ars05052007-stack/git-branch.git
-   10  git push -u origin gitignore
-   11  git commit -m "Add .gitignore file"
-   12  git push -u origin gitignore
-   13  git config --global user.email "your_email@example.com"
-   14  git config --global user.name "ars05052007-stack"
-   15  git config --global user.email "ars05052007@gmail.com"
-   16  git config --global user.name "ars05052007-stack"
-   17  git commit -m "Add .gitignore file"
-   18  git push -u origin gitignore
-   19  git clone https://github.com/ars05052007-stack/НАЗВАНИЕ_РЕПОЗИТОРИЯ.git
-   20  git clone https://github.com/ars05052007-stack/git-hw12.git
-   21  cd git-hw12
-   22  git checkout -b feature
-   23  echo "# My Project" > README.md
-   24  echo "*.log" >> .gitignore
-   25  echo "# My Project" > README.md
-   26  echo "*.log" >> .gitignore
-   27  git add README.md .gitignore
-   28  git commit -m "Add README and update gitignore"
-   29  git push -u origin feature
-   30  git commit --amend -m "Add README and update gitignore ammend"
-   31  git push --force origin feature
-   32  git checkout main
-   33  git merge feature
-   34  history > history.txt
+git clone https://github.com/ars05052007-stack/git-hw12.git
+cd git-hw12
+git checkout -b feature
+echo "# My Project" > README.md
+echo "*.log" >> .gitignore
+git add README.md .gitignore
+git commit -m "Add README and update gitignore"
+git push -u origin feature
+git commit --amend -m "Add README and update gitignore ammend"
+git push --force origin feature
+git checkout main
+git merge feature
+history > history.txt
